@@ -9,6 +9,7 @@ void PrintArray(int[] arr) // Метод вывода массива в терм
     {
         Console.Write($"[{arr[i]}]");
     }
+    Console.WriteLine(" ");
 }
 
 void RandomArray(int[] arr) // Метод заполнения массива случайными числами
@@ -19,13 +20,15 @@ void RandomArray(int[] arr) // Метод заполнения массива с
     }
 }
 
-int []arr = new int[5];
+int []arr = new int[4];
 int sum = 0;
+
 RandomArray(arr);
 PrintArray(arr);
-for(int i = 0; i < arr.Length; i+=2)
+
+for(int i = 1; i < arr.Length; i+=2)
 {
     sum += arr[i];
 }
-Console.WriteLine(" ");
-Console.WriteLine($"Cумму элементов, стоящих на нечётных позициях: {sum}");
+
+Console.WriteLine($"Cумму элементов, стоящих на нечётных индексах: {sum}");
