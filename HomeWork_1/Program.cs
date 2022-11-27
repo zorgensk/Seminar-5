@@ -10,7 +10,7 @@ void PrintArray(int[] arr) // Метод вывода массива в терм
     }
 }
 
-void RandomArray(int[] arr)
+void RandomArray(int[] arr) // Метод заполнения массива случайными числами
 {
     for (int i = 0; i < arr.Length; i++)
     {
